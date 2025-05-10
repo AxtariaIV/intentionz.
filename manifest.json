@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Intent Monitor",
+  "version": "1.0",
+  "description": "Monitor and align your browsing intentions with actual activity",
+  "permissions": [
+    "tabs",
+    "storage",
+    "activeTab",
+    "notifications"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "web_accessible_resources": [{
+  "resources": ["warning.html"],
+  "matches": ["<all_urls>"]
+  }]
+}
+
+(THIS IS MANIFEST.JSON)
+
